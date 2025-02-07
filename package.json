@@ -14,7 +14,9 @@
     "test": "jest  --coverage --verbose",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
     "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
-    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix"
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "babel": {
     "sourceType": "unambiguous",
@@ -44,19 +46,30 @@
   },
   "homepage": "https://github.com/dubey748/abui#readme",
   "devDependencies": {
+    "@chromatic-com/storybook": "3.2.4",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "8.3.3",
+    "@storybook/addon-essentials": "8.5.3",
+    "@storybook/addon-interactions": "8.5.3",
+    "@storybook/addon-onboarding": "8.5.3",
+    "@storybook/blocks": "8.5.3",
+    "@storybook/react": "8.5.3",
+    "@storybook/react-vite": "8.5.3",
+    "@storybook/test": "8.5.3",
     "@types/react": "^19.0.8",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-storybook": "^0.11.2",
     "exact": "^1.0.1",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "typescript": "^5.7.3"
+    "storybook": "8.5.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
   },
   "peerDependencies": {
     "react": ">=18"
