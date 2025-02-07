@@ -11,7 +11,10 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "jest  --coverage --verbose"
+    "test": "jest  --coverage --verbose",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix"
   },
   "babel": {
     "sourceType": "unambiguous",
@@ -26,6 +29,7 @@
       ]
     ]
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dubey748/abui.git"
@@ -44,6 +48,11 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "8.3.3",
     "@types/react": "^19.0.8",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "exact": "^1.0.1",
+    "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup-plugin-postcss": "^4.0.2",

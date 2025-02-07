@@ -1,12 +1,11 @@
-
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom';
 import Page from './index';
-import { render } from "@testing-library/react";
+import { render } from '@testing-library/react';
 
 describe('Page Component', () => {
   it('renders the title and children correctly', () => {
     const title = 'Test Title';
-    const children = 'Test Children'
+    const children = 'Test Children';
 
     const { getByText } = render(<Page title={title}>{children}</Page>);
     const titleElement = getByText(title);
@@ -15,18 +14,15 @@ describe('Page Component', () => {
     expect(titleElement).toBeInTheDocument();
     expect(childrenElement).toBeInTheDocument();
   });
-  it("renders the correct styling", () => {
-  
-    const title = "Test Title";
-    const children = "Test Children";
+  it('renders the correct styling', () => {
+    const title = 'Test Title';
+    const children = 'Test Children';
     const { getByTestId } = render(<Page title={title}>{children}</Page>);
 
-
-    const container = getByTestId("page-container");
-
+    const container = getByTestId('page-container');
 
     expect(container).toHaveStyle(`
-    background-color: #f5f5f5;
+      background-color: #f5f5f5;
     `);
   });
 });
