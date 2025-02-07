@@ -1,0 +1,44 @@
+{
+  "name": "abui",
+  "version": "0.0.0",
+  "description": "A sleek, customizable React component library that lets you build stunning, responsive, and accessible web apps in no time!",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubey748/abui.git"
+  },
+  "author": "ABhishek Dubey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dubey748/abui/issues"
+  },
+  "homepage": "https://github.com/dubey748/abui#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@types/react": "^19.0.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "dependencies": {
+    "postcss": "^8.5.1",
+    "rollup": "^4.34.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.8.1"
+  }
+}
