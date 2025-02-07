@@ -14,6 +14,7 @@ describe('Page Component', () => {
     expect(titleElement).toBeInTheDocument();
     expect(childrenElement).toBeInTheDocument();
   });
+
   it('renders the correct styling', () => {
     const title = 'Test Title';
     const children = 'Test Children';
